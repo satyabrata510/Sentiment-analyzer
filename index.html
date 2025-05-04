@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+</head>
+<body>
+    <h1>Enter a sentence to analyze sentiment</h1>
+    <form method="POST">
+        <input type="text" name="text" placeholder="Type your sentence here" required>
+        <button type="submit">Analyze</button>
+    </form>
+    {% if sentiment %}
+        <h2>Sentiment: {{ sentiment }}</h2>
+    {% endif %}
+</body>
+</html>
